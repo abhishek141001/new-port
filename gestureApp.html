@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesture Detection Extension - Ojhaabhishekraj.in</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .project-image {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .mockup-image {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-heading {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-30 py-4 bg-gray-300">
+        <div class="container py-4 flex justify-between items-center px-8 md:px-20">
+            <a href="index.html" class="text-2xl font-bold text-black">Ojhaabhishekraj.in</a>
+
+            <!-- Burger Menu -->
+            <div class="lg:hidden">
+                <button id="burger-menu" class="text-black focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu Links (Desktop) -->
+            <div class="hidden lg:flex space-x-6">
+                <a href="index.html#about" class="text-black hover:text-gray-500 transition">About</a>
+                <a href="index.html#projects" class="text-black hover:text-gray-500 transition">Projects</a>
+                <a href="index.html#blogs" class="text-black hover:text-gray-500 transition">Blogs</a>
+                <a href="index.html#contact" class="text-black hover:text-gray-500 transition">Contact</a>
+            </div>
+        </div>
+
+        <!-- Side Menu (Mobile) -->
+        <div id="side-menu" class="fixed top-0 left-0 bg-gray-200 w-64 h-full shadow-md transform -translate-x-full transition-transform lg:hidden">
+            <div class="p-4">
+                <button id="close-menu" class="text-black focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-4 p-4 text-3xl gap-4 text-black font-bold">
+                <a href="index.html#about" class="hover:text-gray-500 transition">About</a>
+                <a href="index.html#projects" class="hover:text-gray-500 transition">Projects</a>
+                <a href="index.html#blogs" class="hover:text-gray-500 transition">Blogs</a>
+                <a href="index.html#contact" class="hover:text-gray-500 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Details Section -->
+    <section class="py-20 bg-gray-300">
+        <div class="container mx-auto px-4">
+            <!-- Project Title and Main Image -->
+            <div class="mb-12 text-start">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Gesture Detection Extension</h1>
+                <img src="https://img.freepik.com/free-vector/gesture-recognition_23-2148140818.jpg" alt="Gesture Detection Extension" class="w-80 h-64 object-cover mb-8 project-image">
+            </div>
+
+            <!-- Project Description -->
+            <div class="text-lg leading-relaxed text-gray-700 mb-12">
+                <p><strong>Gesture Detection Extension</strong> is a browser extension designed to enhance user interaction with web pages through hand gestures. Built with <strong>JavaScript</strong> and <strong>TensorFlow.js</strong>, this extension allows users to scroll web pages and perform other actions using hand gestures, making web navigation more intuitive.</p>
+                <p>The extension leverages machine learning to recognize and interpret various hand gestures in real-time. This technology is useful for users who prefer a more interactive and hands-free browsing experience.</p>
+                <p>Currently, there is no live link available for this project, but the code and implementation details can be shared upon request or through a future update.</p>
+            </div>
+
+            <!-- Mockups Section -->
+            <!-- You can add mockups or additional images here -->
+            <!-- For now, this section can be left out or added later -->
+
+            <!-- Live Link Section -->
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 section-heading">Check It Out</h2>
+                <p class="text-gray-500">Currently not live.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-6 text-center text-gray-700">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 Abhishek Raj. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

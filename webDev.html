@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future of Web Development - Ojhaabhishekraj.in</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .blog-image {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-heading {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-30 py-4 bg-gray-300">
+        <div class="container py-4 flex justify-between items-center px-8 md:px-20">
+            <a href="index.html" class="text-2xl font-bold text-black">Ojhaabhishekraj.in</a>
+
+            <!-- Burger Menu -->
+            <div class="lg:hidden">
+                <button id="burger-menu" class="text-black focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu Links (Desktop) -->
+            <div class="hidden lg:flex space-x-6">
+                <a href="index.html#about" class="text-black hover:text-gray-500 transition">About</a>
+                <a href="index.html#projects" class="text-black hover:text-gray-500 transition">Projects</a>
+                <a href="index.html#blogs" class="text-black hover:text-gray-500 transition">Blogs</a>
+                <a href="index.html#contact" class="text-black hover:text-gray-500 transition">Contact</a>
+            </div>
+        </div>
+
+        <!-- Side Menu (Mobile) -->
+        <div id="side-menu" class="fixed top-0 left-0 bg-gray-200 w-64 h-full shadow-md transform -translate-x-full transition-transform lg:hidden">
+            <div class="p-4">
+                <button id="close-menu" class="text-black focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-4 p-4 text-3xl gap-4 text-black font-bold">
+                <a href="#about" class="hover:text-gray-500 transition">About</a>
+                <a href="#projects" class="hover:text-gray-500 transition">Projects</a>
+                <a href="index.html#blogs" class="hover:text-gray-500 transition">Blogs</a>
+                <a href="#contact" class="hover:text-gray-500 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Section -->
+    <section class="py-20 bg-gray-300">
+        <div class="container mx-auto px-4">
+            <!-- Blog Title and Main Image -->
+            <div class="mb-12 text-start">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">The Future of Web Development</h1>
+                <img src="https://img.freepik.com/free-photo/programming-background-collage_23-2149901779.jpg?t=st=1724167014~exp=1724170614~hmac=788d1920e926ef18dce937e28678cae1e2425a5dcdc27894dcfc8fc145a50cb3&w=996" alt="The Future of Web Development" class="w-80 h-64 object-cover mb-8 blog-image">
+            </div>
+
+            <!-- Blog Content -->
+            <div class="text-lg leading-relaxed text-gray-700 space-y-6">
+                <p>Web development is constantly evolving, with new tools, frameworks, and best practices emerging at a rapid pace. Staying ahead in this field requires a keen understanding of the latest trends and technologies.</p>
+                
+                <h2 class="text-2xl font-bold text-gray-900 section-heading">1. The Rise of Jamstack</h2>
+                <p>Jamstack, which stands for JavaScript, APIs, and Markup, is gaining popularity for building fast and secure websites. By decoupling the frontend from the backend, developers can use static site generators and API-first approaches to deliver content.</p>
+                
+                <h2 class="text-2xl font-bold text-gray-900 section-heading">2. WebAssembly</h2>
+                <p>WebAssembly is a binary instruction format that allows developers to run high-performance applications on the web, written in languages like C, C++, and Rust. This opens up new possibilities for web development, especially in areas that require heavy computation.</p>
+                
+                <h2 class="text-2xl font-bold text-gray-900 section-heading">3. Serverless Architectures</h2>
+                <p>Serverless computing is becoming more popular as it allows developers to build and deploy applications without managing the underlying infrastructure. This trend is particularly beneficial for scaling applications and optimizing costs.</p>
+                
+                <h2 class="text-2xl font-bold text-gray-900 section-heading">4. AI and Machine Learning</h2>
+                <p>AI and machine learning are increasingly being integrated into web development, enabling more personalized and efficient user experiences. From chatbots to predictive analytics, these technologies are transforming how we interact with the web.</p>
+                
+                <p>Overall, the future of web development looks bright, with a continued focus on performance, security, and user experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-6 text-center text-gray-700">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 Abhishek Raj. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

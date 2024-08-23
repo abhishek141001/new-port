@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Earning Calculator - Project Details</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .project-image {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .mockup-image {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-heading {
+            margin-bottom: 1.5rem;
+        }
+
+        .hover-img-scale:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-30 py-4 bg-gray-300">
+        <div class="container py-4 flex justify-between items-center px-8 md:px-20">
+            <a href="index.html" class="text-2xl font-bold text-black">Ojhaabhishekraj.in</a>
+
+            <!-- Burger Menu -->
+            <div class="lg:hidden">
+                <button id="burger-menu" class="text-black focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu Links (Desktop) -->
+            <div class="hidden lg:flex space-x-6">
+                <a href="index.html#about" class="text-black hover:text-gray-500 transition">About</a>
+                <a href="index.html#projects" class="text-black hover:text-gray-500 transition">Projects</a>
+                <a href="index.html#blogs" class="text-black hover:text-gray-500 transition">Blogs</a>
+                <a href="index.html#contact" class="text-black hover:text-gray-500 transition">Contact</a>
+            </div>
+        </div>
+
+        <!-- Side Menu (Mobile) -->
+        <div id="side-menu" class="fixed top-0 left-0 bg-gray-200 w-64 h-full shadow-md transform -translate-x-full transition-transform lg:hidden">
+            <div class="p-4">
+                <button id="close-menu" class="text-black focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-4 p-4 text-3xl gap-4 text-black font-bold">
+                <a href="index.html#about" class="hover:text-gray-500 transition">About</a>
+                <a href="index.html#projects" class="hover:text-gray-500 transition">Projects</a>
+                <a href="index.html#blogs" class="hover:text-gray-500 transition">Blogs</a>
+                <a href="index.html#contact" class="hover:text-gray-500 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Details Section -->
+    <section class="py-20 bg-gray-300">
+        <div class="container mx-auto px-4">
+            <!-- Project Title and Main Image -->
+            <div class="mb-12 text-start">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">YouTube Earning Calculator</h1>
+                <img src="https://img.freepik.com/free-vector/graph-analytics-concept_23-2148373433.jpg" alt="YouTube Earning Calculator Project" class="w-80 h-64 object-cover mb-8 project-image">
+            </div>
+
+            <!-- Project Description -->
+            <div class="text-lg leading-relaxed text-gray-700 mb-12">
+                <p><strong>YouTube Earning Calculator</strong> is a tool designed to help users calculate YouTube video earnings based on a custom formula. Users can input a YouTube share link and compare metrics with other videos. The app also calculates earnings using a custom logic based on various factors.</p>
+                <p>The project is built using <strong>React</strong> for the frontend, with <strong>Redux</strong> for state management. The backend is powered by <strong>Node.js</strong> and <strong>Express</strong>, with data stored in <strong>MongoDB</strong>. The application leverages the <strong>YouTube API</strong> to fetch video data and perform calculations.</p>
+                <p>Features include the ability to analyze and compare video metrics, view detailed earning reports, and visualize data through interactive charts and graphs.</p>
+            </div>
+
+            <!-- Mockups Section -->
+            <!-- <div class="mb-12 text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 section-heading">Mockups</h2>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <div class="rounded-lg overflow-hidden bg-gray-200 hover:shadow-lg" style="max-width: 400px;">
+                        <img src="mockup1.png" alt="YouTube Earning Calculator Mockup" class="w-full h-48 object-cover hover-img-scale">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-black">Dashboard</h3>
+                            <p class="text-black mb-4">Overview of video metrics and earnings, with options to compare multiple videos.</p>
+                        </div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden bg-gray-200 hover:shadow-lg" style="max-width: 400px;">
+                        <img src="mockup2.png" alt="YouTube Earning Calculator Mockup" class="w-full h-48 object-cover hover-img-scale">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-black">Earnings Report</h3>
+                            <p class="text-black mb-4">Detailed report of video earnings based on custom calculations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Live Link Section -->
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 section-heading">Check It Out Live</h2>
+                <a href="https://www.ytearningcalculator.com" target="_blank" class="bg-gray-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-700 transition">
+                    Visit YouTube Earning Calculator
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-6 text-center text-gray-700">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 Abhishek Raj. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

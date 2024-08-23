@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrepreneurship in Tech - Ojhaabhishekraj.in</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .blog-image {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-heading {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-30 py-4 bg-gray-300">
+        <div class="container py-4 flex justify-between items-center px-8 md:px-20">
+            <a href="index.html" class="text-2xl font-bold text-black">Ojhaabhishekraj.in</a>
+
+            <!-- Burger Menu -->
+            <div class="lg:hidden">
+                <button id="burger-menu" class="text-black focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu Links (Desktop) -->
+            <div class="hidden lg:flex space-x-6">
+                <a href="index.html#about" class="text-black hover:text-gray-500 transition">About</a>
+                <a href="index.html#projects" class="text-black hover:text-gray-500 transition">Projects</a>
+                <a href="index.html#blogs" class="text-black hover:text-gray-500 transition">Blogs</a>
+                <a href="index.html#contact" class="text-black hover:text-gray-500 transition">Contact</a>
+            </div>
+        </div>
+
+        <!-- Side Menu (Mobile) -->
+        <div id="side-menu" class="fixed top-0 left-0 bg-gray-200 w-64 h-full shadow-md transform -translate-x-full transition-transform lg:hidden">
+            <div class="p-4">
+                <button id="close-menu" class="text-black focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-4 p-4 text-3xl gap-4 text-black font-bold">
+                <a href="#about" class="hover:text-gray-500 transition">About</a>
+                <a href="#projects" class="hover:text-gray-500 transition">Projects</a>
+                <a href="#blogs" class="hover:text-gray-500 transition">Blogs</a>
+                <a href="#contact" class="hover:text-gray-500 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Section -->
+    <section class="py-20 bg-gray-300">
+        <div class="container mx-auto px-4">
+            <!-- Blog Title and Main Image -->
+            <div class="mb-12 text-start">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Entrepreneurship in Tech</h1>
+                <img src="https://img.freepik.com/free-photo/business-people-meeting-working-together_1150-14314.jpg" alt="Entrepreneurship in Tech" class="w-80 h-64 object-cover mb-8 blog-image">
+            </div>
+
+            <!-- Blog Content -->
+            <div class="text-lg leading-relaxed text-gray-700 space-y-6">
+                <p>Starting and growing a tech-based business can be a rewarding yet challenging endeavor. In today's fast-paced economy, entrepreneurs need to be agile, innovative, and well-informed to succeed. Here are some insights into navigating the world of tech entrepreneurship:</p>
+
+                <h2 class="text-2xl font-bold text-gray-900 section-heading">1. Identify a Market Need</h2>
+                <p>The foundation of any successful tech business is solving a real problem or addressing a specific market need. Conduct thorough market research to identify gaps in the market and validate your idea with potential customers.</p>
+
+                <h2 class="text-2xl font-bold text-gray-900 section-heading">2. Develop a Scalable Solution</h2>
+                <p>Focus on building a solution that can grow with your business. Scalable solutions can handle increasing user demands without compromising performance. Utilize modern technologies and architectures to ensure your product can scale efficiently.</p>
+
+                <h2 class="text-2xl font-bold text-gray-900 section-heading">3. Assemble a Strong Team</h2>
+                <p>Surround yourself with a team of skilled professionals who share your vision and can contribute to the success of the business. A diverse team with expertise in various areas such as development, marketing, and operations can provide a competitive edge.</p>
+
+                <h2 class="text-2xl font-bold text-gray-900 section-heading">4. Focus on Customer Experience</h2>
+                <p>Delivering an exceptional customer experience is crucial for retaining users and building brand loyalty. Continuously gather feedback, improve your product based on user needs, and ensure a seamless user experience throughout your platform.</p>
+
+                <h2 class="text-2xl font-bold text-gray-900 section-heading">5. Adapt to Market Changes</h2>
+                <p>The tech industry is constantly evolving, and staying ahead requires adaptability. Keep an eye on emerging trends, be open to pivoting your strategy, and remain flexible in your approach to meet changing market demands.</p>
+
+                <p>Building a tech-based business requires a combination of strategic planning, innovation, and resilience. By focusing on these key areas, you can position yourself for success in the competitive tech landscape.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-6 text-center text-gray-700">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 Abhishek Raj. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

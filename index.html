@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="max-width=device-max-width, initial-scale=1.0">
+    <title>Abhishek Raj - Full Stack Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class=" text-gray-800 font-sans ">
+
+    <!-- Navbar -->
+     <div class="">
+    <nav class=" sticky top-0 z-30 py-4 bg-gray-300">
+        <div class="container   py-4 flex justify-between items-center md:px-20">
+            <div class="text-2xl font-bold text-black">Ojhaabhishekraj.in</div>
+            
+            <!-- Burger Menu -->
+            <div class="lg:hidden">
+                <button id="burger-menu" class="text-black focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-max-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+    
+            <!-- Menu Links (Desktop) -->
+            <div class="hidden lg:flex space-x-6">
+                <a href="#about" class="text-black hover:text-gray-500 transition">About</a>
+                <a href="#projects" class="text-black hover:text-gray-500 transition">Projects</a>
+                <a href="#blogs" class="text-black hover:text-gray-500 transition">Blogs</a>
+                <a href="#contact" class="text-black hover:text-gray-500 transition">Contact</a>
+            </div>
+        </div>
+    
+        <!-- Side Menu (Mobile) -->
+        <div id="side-menu" class="fixed top-0 left-0 bg2 w-64 h-full  shadow-md transform -translate-x-full transition-transform lg:hidden ">
+            <div class="p-4">
+                <button id="close-menu" class="text-black focus:outline-none">
+
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-max-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- <div class="text-2xl font-bold text-black text-center mb-12">Ojhaabhishekraj.in</div> -->
+            <div class="flex flex-col space-y-4 p-4  text-3xl gap-4 text-black font-bold">
+                <a href="#about" class=" hover:text-gray-500 transition">About</a>
+                <a href="#projects" class=" hover:text-gray-500 transition">Projects</a>
+                <a href="#blogs" class=" hover:text-gray-500 transition">Blogs</a>
+                <a href="#contact" class=" hover:text-gray-500 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Hero Section -->
+<!-- Hero Section -->
+<!-- Hero Section -->
+<header class="text py-20 text-black px-8 md:px-20 bg-gray-300 " style="height: 100%; ">
+    <div class="flex flex-col lg:flex-row-reverse  container mx-auto px-4 text-start items-center justify-end gap-52">
+        <!-- <img src="hero.png" alt="Your Photo" class=" mb-6 fade-in" style="max-width:280px"> -->
+        <div class="flex flex-col gap-2 items-start ">
+            <p class="text-xl mt-3">Hii I'm,</p>
+            <h1 class="text-5xl font-bold mb-3">Abhishek Raj</h1>
+            <!-- <p class="text-xl mt-3 ">Crafting Web Experiences & Engineering Solutions</p> -->
+
+            <p>👨‍💻  A self taught <span class="font-bold">programmer</span> and a lover of all things in tech.</p>
+            <p>⚒️  I mainly work with <span class="font-bold">Vanilla JavaScript</span>, <span class="font-bold">React Js</span>,<span class="font-bold"> Next Js</span> and<span class="font-bold"> Node js</span> C++ on a daily basis.</p>
+            <p>🏡 Currently living in the beautiful city of <span class="font-bold">Ahmedabad</span>, in <span class="font-bold">India</span>.</p>
+            <a href="#projects" class="bg-gray-700 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg2 hover-scale mt-4">Explore My Work</a>
+            <div class="flex flex-row gap-2 mt-8 ">
+                <a href="https://github.com/abhishekraj141001" target="_blank" title="GitHub">
+                    <svg class="w-6 h-6 " fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0.297C5.373 0.297 0 5.672 0 12.297c0 5.36 3.438 9.9 8.16 11.487.597.112.82-.259.82-.577v-2.025c-3.338.726-4.042-1.51-4.042-1.51-.545-1.38-1.333-1.748-1.333-1.748-1.088-.746.083-.732.083-.732 1.205.085 1.836 1.24 1.836 1.24 1.07 1.87 2.805 1.332 3.493 1.021.108-.774.418-1.331.762-1.635-2.665-.306-5.467-1.348-5.467-6.004 0-1.325.474-2.408 1.253-3.259-.126-.306-.543-1.544.118-3.22 0 0 1.01-.322 3.303 1.231.96-.267 1.993-.401 3.016-.406 1.022.005 2.053.14 3.01.406 2.295-1.553 3.303-1.231 3.303-1.231.663 1.676.246 2.914.121 3.22.78.85 1.252 1.934 1.252 3.259 0 4.668-2.81 5.693-5.479 6.002.432.373.815 1.104.815 2.22v3.293c0 .322.22.692.827.577C20.564 22.197 24 17.657 24 12.297 24 5.672 18.627.297 12 .297z"/>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/ojhaabhishekraj" target="_blank" title="Twitter">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.954 4.569c-.885.392-1.83.656-2.825.775 1.016-.611 1.798-1.573 2.165-2.723-.951.564-2.003.974-3.127 1.195-.896-.954-2.17-1.55-3.58-1.55-2.71 0-4.91 2.2-4.91 4.91 0 .39.043.765.127 1.127-4.08-.205-7.693-2.159-10.1-5.134-.424.727-.666 1.572-.666 2.481 0 1.71.87 3.215 2.2 4.094-.814-.026-1.581-.249-2.247-.616v.062c0 2.393 1.705 4.382 3.97 4.83-.416.113-.855.173-1.307.173-.32 0-.631-.031-.936-.089.632 1.97 2.462 3.407 4.63 3.447-1.692 1.324-3.817 2.112-6.118 2.112-.397 0-.789-.023-1.175-.069 2.2 1.413 4.806 2.237 7.598 2.237 9.111 0 14.1-7.56 14.1-14.1 0-.215-.005-.428-.015-.641.97-.699 1.81-1.57 2.48-2.564z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/abhishek-raj-69b55a230/" target="_blank" title="LinkedIn">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.104 3H4.896C3.847 3 3 3.847 3 4.896v14.208C3 20.153 3.847 21 4.896 21h14.208c1.049 0 1.896-.847 1.896-1.896V4.896C21 3.847 20.153 3 19.104 3zM8.82 18.275H6.705V9.725h2.115v8.55zm-1.057-9.64c-.683 0-1.237-.559-1.237-1.244 0-.684.554-1.244 1.237-1.244s1.237.56 1.237 1.244c0 .685-.554 1.244-1.237 1.244zm12.528 9.64h-2.115v-4.485c0-1.068-.02-2.442-1.484-2.442-1.484 0-1.71 1.158-1.71 2.354v4.573h-2.115v-8.55h2.115v1.171h.028c.295-.561 1.016-1.158 2.095-1.158 2.237 0 2.652 1.485 2.652 3.415v5.122z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    
+</header>
+
+</div>
+
+<!-- <section id="about" class="py-20  px-20 bg-gray-200">
+        
+    <div class="container mx-auto px-4 text-start">
+        <h2 class="text-3xl font-bold text-black mb-8 fade-in">About Me</h2>
+   
+    </div>
+</section> -->
+
+<section id="projects" class="py-20 bg-gray-300 px-8 md:px-20">
+    <div class="container px-auto px-4">
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold text-black text-start  slide-in mb-1">My Projects</h2>
+            <!-- <div class="w-24 bg-gray- h-1"></div> -->
+        </div>
+      
+        <div class="flex flex-col lg:flex-row gap-8">
+
+            <!-- Project 1 -->
+            <div class="  rounded-lg overflow-hidden slide-in bg-gray-200 hover:shadow-lg" style="max-width: 400px;">
+                <img src="https://socialsynchub.com/img/headingImg.png" alt="Project 1" class="w-full h-48 object-cover hover-img-scale">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-black">SocialSyncHub</h3>
+                    <p class="text-black mb-4">A social media management app where users can connect their social media accounts and post from one place, with scheduling and calendar features.</p>
+                    <a href="social.html" class="text-gray-500 hover:underline">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="  rounded-lg overflow-hidden slide-in bg-gray-200 hover:shadow-lg" style="max-width: 400px;">
+                <img src="yt.png" alt="Project 2" class="w-full h-48 object-cover hover-img-scale">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-black">YouTube Earning Calculator</h3>
+                    <p class="text-black mb-4">A tool that calculates YouTube video earnings based on a custom formula, using YouTube API to display video data.</p>
+                    <a href="ytEarning.html" class="text-gray-500 hover:underline">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="  rounded-lg overflow-hidden slide-in bg-gray-200 hover:shadow-lg" style="max-width: 400px;">
+                <img src="https://via.placeholder.com/600x400" alt="Project 3" class="w-full h-48 object-cover hover-img-scale">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-black">Gesture Detection Extension</h3>
+                    <p class="text-black mb-4">A browser extension that scrolls web pages using hand gestures, built with JavaScript and TensorFlow.js.</p>
+                    <a href="gestureApp.html" class="text-gray-500 hover:underline">View Details</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- <div class="flex flex-col px-20 py-20 bg-gray-200"> -->
+<!-- Daily Learning Section -->
+<section id="blogs" class="py-20 bg-gray-300 px-8 md:px-20">
+    <div class="container mx-auto px-4 text-start ">
+        <div class="flex flex-row items-end gap-4 mb-12">
+            <h2 class="text-3xl font-bold text-black ">Blogs & Research</h2>
+            <img src="laptop.png" class="w-20 " >
+        </div>
+   
+        <div class="flex flex-row items-start gap-40">
+            <div class="flex flex-col gap-4 " style="max-width: fit-content;">
+                <!-- Blog 1 -->
+                <div class="  rounded-lg overflow-hidden slide-in bg-gray-200 w-fit hover:shadow-lg">
+                    <!-- <img src="https://img.freepik.com/free-photo/programming-background-collage_23-2149901779.jpg?t=st=1724167014~exp=1724170614~hmac=788d1920e926ef18dce937e28678cae1e2425a5dcdc27894dcfc8fc145a50cb3&w=996" alt="Blog 1" class="w-full h-48 object-cover hover-img-scale"> -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-black">The Future of Web Development</h3>
+                        <p class=" mb-4 text-black">Exploring the latest trends in web development, from frameworks to design patterns.</p>
+                        <a href="webDev.html" class="text-gray-500 hover:underline">Read More</a>
+                    </div>
+                </div>
+    
+                <!-- Blog 2 -->
+                <div class="  rounded-lg overflow-hidden slide-in bg-gray-200 w-fit hover:shadow-lg">
+                    <!-- <img src="https://via.placeholder.com/600x400" alt="Blog 2" class="w-full h-48 object-cover hover-img-scale"> -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-black">Building Scalable Applications</h3>
+                        <p class=" mb-4 text-black">Techniques and tools to ensure your application can handle growing user bases.</p>
+                        <a href="scalable.html" class="text-gray-500 hover:underline">Read More</a>
+                    </div>
+                </div>
+    
+                <!-- Blog 3 -->
+                <div class=" rounded-lg overflow-hidden slide-in bg-gray-200 w-fit hover:shadow-lg">
+                    <!-- <img src="https://via.placeholder.com/600x400" alt="Blog 3" class="w-full h-48 object-cover hover-img-scale"> -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-black">Entrepreneurship in Tech</h3>
+                        <p class=" mb-4 text-black">Insights into starting and growing a tech-based business in today's economy.</p>
+                        <a href="entrepraurBlog.html" class="text-gray-500 hover:underline">Read More</a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+       
+    </div>
+</section>
+ <div class="flex flex-row gap-16 bg-gray-200"></div>
+
+
+
+
+<section id="daily-learning" class="py-20 bg-gray-300 px-8 md:px-20">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-black text-start mb-12 fade-in">Daily Learning</h2>
+        <div class="flex flex-wrap  gap-8">
+
+            <!-- Learning Entry 1 -->
+            <div class="rounded-lg overflow-hidden slide-in bg-gray-200 p-6 hover:shadow-lg w-400">
+                <h3 class="text-xl font-semibold mb-1 text-black">Using Color Depth and Hierarchy in UI Design</h3>
+                <p class="tex-sm text-gray-800 mb-2">August 22, 2024</p>
+                <p class="text-black mb-4">Learned how to enhance UI design by using color depths and visual hierarchy to guide user attention and improve usability.</p>
+            </div>
+
+            <!-- Learning Entry 2 -->
+            <div class="rounded-lg overflow-hidden slide-in bg-gray-200 p-6 hover:shadow-lg w-400">
+                <h3 class="text-xl font-semibold mb-1 text-black"> AI/ML in JavaScript with Brain.js</h3>
+                <p class="tex-sm text-gray-800 mb-2">August 21, 2024</p>
+                <p class="text-black mb-4">Explored AI/ML in JavaScript using Brain.js, focusing on training an AI model to select text color based on the background for better readability.</p>
+            </div>
+
+            <!-- Learning Entry 3 -->
+            <div class="rounded-lg overflow-hidden slide-in bg-gray-200 p-6 hover:shadow-lg w-400">
+                <h3 class="text-xl font-semibold mb-1 text-black"> Sending Form Data to Google Sheets without a Server</h3>
+                <p class="tex-sm text-gray-800 mb-2">August 20, 2024</p>
+                <p class="text-black mb-4">Learned to send form data directly from the client to Google Sheets using Google Apps Script, streamlining the process for lightweight apps.</p>
+            </div>
+
+            <!-- Learning Entry 4 -->
+            <div class="rounded-lg overflow-hidden slide-in bg-gray-200 p-6 hover:shadow-lg w-400">
+                <h3 class="text-xl font-semibold mb-1 text-black">August 19, 2024 - PHP for Sending Contact Information via Email</h3>
+                <p class="tex-sm text-gray-800 mb-2">August 19, 2024</p>
+                <p class="text-black mb-4">Started using PHP to send contact form information directly to an email, simplifying the process of building custom contact forms.</p>
+            </div>
+
+            <!-- Learning Entry 5 -->
+            <div class="rounded-lg overflow-hidden slide-in bg-gray-200 p-6 hover:shadow-lg w-400">
+                <h3 class="text-xl font-semibold mb-1 text-black"> TensorFlow.js for Client-Side Apps</h3>
+                <p class="tex-sm text-gray-800 mb-2">August 18, 2024</p>
+                <p class="text-black mb-4">Explored TensorFlow.js for integrating machine learning in client-side applications, benefiting performance and reducing server load.</p>
+            </div>
+
+            <!-- Learning Entry 6 -->
+            <div class="rounded-lg overflow-hidden slide-in bg-gray-200 p-6 hover:shadow-lg w-400">
+                <h3 class="text-xl font-semibold mb-1 text-black"> Server-Side Rendering in Next.js</h3>
+                <p class="tex-sm text-gray-800 mb-2">August 17, 2024</p>
+                <p class="text-black mb-4">Learned about server-side rendering in Next.js and its benefits for SEO, including improved search engine indexing and faster page loads.</p>
+            </div>
+
+            <!-- Learning Entry 7 -->
+            <!-- <div class="rounded-lg overflow-hidden slide-in bg-gray-200 p-6 hover:shadow-lg w-400">
+                <h3 class="text-xl font-semibold mb-1 text-black">Basics of Rust</h3>
+                <p class="tex-sm text-gray-800 mb-2">August 16, 2024</p>
+                <p class="text-black mb-4">Started learning the basics of Rust, focusing on memory safety, ownership, concurrency, and its strong type system.</p>
+            </div> -->
+
+        </div>
+    </div>
+</section>
+<!-- </div> -->
+
+<!-- <div class="flex flex-wrap">
+
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" max-width="96px" />
+
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rect/rect-original.svg"  max-width="96px"/>
+
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" max-width="96px"/>
+
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" max-width="96px"/>
+
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" max-width="96px"/>
+          
+          
+          
+          
+          
+</div> -->
+    <!-- About Section -->
+   
+
+    <!-- Projects Section -->
+    
+
+    <!-- Blogs Section -->
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-300 text-black  px-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Get In Touch</h2>
+            <p class="text-lg leading-relaxed max-w-3xl mx-auto mb-8">
+                If you're interested in working together, have any questions, or want to discuss tech and entrepreneurship, feel free to reach out!
+            </p>
+            <a href="ojhaabhishekraj14@gmail.com" class="bg-gray-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-700 transition">
+                Contact Me
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class=" text-black py-6 bg-gray-100 ">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Abhishek Raj. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+<script src="script.js">
+
+</script>
+</body>
+
+</html>

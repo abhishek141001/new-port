@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - SocialSyncHub</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .project-image {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .mockup-image {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-heading {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Navbar -->
+    <nav class=" sticky top-0 z-30 py-4 bg-gray-300">
+        <div class="container   py-4 flex justify-between items-center px-8 md:px-20">
+            <a href="index.html" class="text-2xl font-bold text-black">Ojhaabhishekraj.in</a>
+            
+            <!-- Burger Menu -->
+            <div class="lg:hidden">
+                <button id="burger-menu" class="text-black focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-max-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+    
+            <!-- Menu Links (Desktop) -->
+            <div class="hidden lg:flex space-x-6">
+                <a href="index.html#about" class="text-black hover:text-gray-500 transition">About</a>
+                <a href="index.html#projects" class="text-black hover:text-gray-500 transition">Projects</a>
+                <a href="index.html#blogs" class="text-black hover:text-gray-500 transition">Blogs</a>
+                <a href="index.html#contact" class="text-black hover:text-gray-500 transition">Contact</a>
+            </div>
+        </div>
+    
+        <!-- Side Menu (Mobile) -->
+        <div id="side-menu" class="fixed top-0 left-0 bg2 w-64 h-full  shadow-md transform -translate-x-full transition-transform lg:hidden ">
+            <div class="p-4">
+                <button id="close-menu" class="text-black focus:outline-none">
+
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-max-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- <div class="text-2xl font-bold text-black text-center mb-12">Ojhaabhishekraj.in</div> -->
+            <div class="flex flex-col space-y-4 p-4  text-3xl gap-4 text-black font-bold">
+                <a href="index.html#about" class=" hover:text-gray-500 transition">About</a>
+                <a href="index.html#projects" class=" hover:text-gray-500 transition">Projects</a>
+                <a href="index.html#blogs" class=" hover:text-gray-500 transition">Blogs</a>
+                <a href="index.html#contact" class=" hover:text-gray-500 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Project Details Section -->
+    <section class="py-20 bg-gray-300">
+        <div class="container mx-auto px-4">
+            <!-- Project Title and Main Image -->
+            <div class="mb-12 text-start">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">SocialSyncHub</h1>
+                <img src="https://img.freepik.com/free-vector/social-dashboard-concept-illustration_114360-1568.jpg?t=st=1724443174~exp=1724446774~hmac=1ca91751e43d2e1d9ddd100a21538aea3aa99341725f353b14274096767f7ddf&w=996" alt="SocialSyncHub Project" class="w-80 h-64 object-cover mb-8 project-image">
+            </div>
+
+            <!-- Project Description -->
+            <div class="text-lg leading-relaxed text-gray-700 mb-12">
+                <p><strong>SocialSyncHub</strong> is a comprehensive social media management application designed to streamline the process of managing multiple social media accounts. Users can connect their accounts, post to all of them from a single platform, and even schedule posts for future dates.</p>
+                <p>The project is built using <strong>React</strong> for the frontend, with <strong>Redux</strong> for state management. The backend is powered by <strong>Node.js</strong> and <strong>Express</strong>, and data is stored in <strong>MongoDB</strong>. To handle media storage, AWS S3 is used with pre-signed URLs to ensure security and efficiency.</p>
+                <p>One of the standout features is the <strong>calendar integration</strong>, which allows users to view and manage all their scheduled posts. The app also supports multiple <strong>OAuth integrations</strong> for different social media platforms, making it easy to manage various accounts securely.</p>
+            </div>
+
+            <!-- Mockups Section -->
+          
+
+            <!-- Live Link Section -->
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 section-heading">Check It Out Live</h2>
+                <a href="https://www.socialsynchub.com" target="_blank" class="bg-gray-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-700 transition">
+                    Visit SocialSyncHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-6 text-center text-gray-700">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 Abhishek Raj. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

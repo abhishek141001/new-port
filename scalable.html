@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Scalable Applications - Ojhaabhishekraj.in</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .blog-image {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-heading {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-30 py-4 bg-gray-300">
+        <div class="container py-4 flex justify-between items-center px-8 md:px-20">
+            <a href="index.html" class="text-2xl font-bold text-black">Ojhaabhishekraj.in</a>
+
+            <!-- Burger Menu -->
+            <div class="lg:hidden">
+                <button id="burger-menu" class="text-black focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu Links (Desktop) -->
+            <div class="hidden lg:flex space-x-6">
+                <a href="#about" class="text-black hover:text-gray-500 transition">About</a>
+                <a href="#projects" class="text-black hover:text-gray-500 transition">Projects</a>
+                <a href="index.html#blogs" class="text-black hover:text-gray-500 transition">Blogs</a>
+                <a href="#contact" class="text-black hover:text-gray-500 transition">Contact</a>
+            </div>
+        </div>
+
+        <!-- Side Menu (Mobile) -->
+        <div id="side-menu" class="fixed top-0 left-0 bg-gray-200 w-64 h-full shadow-md transform -translate-x-full transition-transform lg:hidden">
+            <div class="p-4">
+                <button id="close-menu" class="text-black focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-4 p-4 text-3xl gap-4 text-black font-bold">
+                <a href="index.html#about" class="hover:text-gray-500 transition">About</a>
+                <a href="index.html#projects" class="hover:text-gray-500 transition">Projects</a>
+                <a href="index.html#blogs" class="hover:text-gray-500 transition">Blogs</a>
+                <a href="index.html#contact" class="hover:text-gray-500 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Section -->
+    <section class="py-20 bg-gray-300">
+        <div class="container mx-auto px-4">
+            <!-- Blog Title and Main Image -->
+            <div class="mb-12 text-start">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Building Scalable Applications</h1>
+                <img src="https://img.freepik.com/free-photo/business-people-meeting-working-digital-tablet_1150-14220.jpg" alt="Building Scalable Applications" class="w-80 h-64 object-cover mb-8 blog-image">
+            </div>
+
+            <!-- Blog Content -->
+            <div class="text-lg leading-relaxed text-gray-700 space-y-6">
+                <p>Building scalable applications is crucial for ensuring that your app can handle increasing user bases and growing amounts of data. Here are some techniques and tools to consider when designing and developing scalable applications:</p>
+
+                <h2 class="text-2xl font-bold text-gray-900 section-heading">1. Use Microservices Architecture</h2>
+                <p>Microservices architecture involves breaking down your application into smaller, independent services that can be developed, deployed, and scaled individually. This approach helps in managing complex applications by separating concerns and improving scalability and maintainability.</p>
+
+                <h2 class="text-2xl font-bold text-gray-900 section-heading">2. Implement Caching Strategies</h2>
+                <p>Caching is a technique used to store frequently accessed data in a fast-access storage layer, reducing the load on your database and improving application performance. Consider using tools like Redis or Memcached to cache data and improve response times.</p>
+
+                <h2 class="text-2xl font-bold text-gray-900 section-heading">3. Leverage Load Balancing</h2>
+                <p>Load balancing distributes incoming network traffic across multiple servers to ensure no single server becomes overwhelmed. This helps in maintaining high availability and reliability. Popular load balancers include Nginx and HAProxy.</p>
+
+                <h2 class="text-2xl font-bold text-gray-900 section-heading">4. Optimize Your Database</h2>
+                <p>Database optimization involves using indexing, query optimization, and data partitioning to improve database performance. Consider using a distributed database system or a NoSQL database if your application requires handling large volumes of data.</p>
+
+                <h2 class="text-2xl font-bold text-gray-900 section-heading">5. Monitor and Analyze Performance</h2>
+                <p>Regular monitoring and analysis of application performance can help in identifying bottlenecks and areas that need improvement. Tools like New Relic, Datadog, and Prometheus can provide valuable insights into your application's performance.</p>
+
+                <p>By implementing these techniques and using the right tools, you can build applications that not only perform well under heavy load but also scale efficiently as your user base grows.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-6 text-center text-gray-700">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 Abhishek Raj. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
