@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Details - SocialSyncHub</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="SocialSyncHub is a powerful social media management application that simplifies the process of managing multiple accounts. Schedule posts, connect accounts, and streamline your social media presence from one platform.">
+    <meta name="keywords" content="SocialSyncHub, social media management, manage social media, schedule posts, social media automation, connect social accounts, React, Node.js, MongoDB, AWS S3, OAuth integration">
+
     <link href="styles.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
@@ -27,15 +32,15 @@
 <body class="bg-gray-50 text-gray-800 font-sans">
 
     <!-- Navbar -->
-    <nav class=" sticky top-0 z-30 py-4 bg-gray-300">
-        <div class="container   py-4 flex justify-between items-center px-8 md:px-20">
+    <nav class="sticky top-0 z-30 py-4 bg-gray-300">
+        <div class="container py-4 flex justify-between items-center px-8 md:px-20">
             <a href="index.html" class="text-2xl font-bold text-black">Ojhaabhishekraj.in</a>
             
             <!-- Burger Menu -->
             <div class="lg:hidden">
                 <button id="burger-menu" class="text-black focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-max-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
                 </button>
             </div>
@@ -50,26 +55,23 @@
         </div>
     
         <!-- Side Menu (Mobile) -->
-        <div id="side-menu" class="fixed top-0 left-0 bg2 w-64 h-full  shadow-md transform -translate-x-full transition-transform lg:hidden ">
+        <div id="side-menu" class="fixed top-0 left-0 bg-white w-64 h-full shadow-md transform -translate-x-full transition-transform lg:hidden ">
             <div class="p-4">
                 <button id="close-menu" class="text-black focus:outline-none">
-
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-max-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                     </svg>
                 </button>
             </div>
-            <!-- <div class="text-2xl font-bold text-black text-center mb-12">Ojhaabhishekraj.in</div> -->
-            <div class="flex flex-col space-y-4 p-4  text-3xl gap-4 text-black font-bold">
-                <a href="index.html#about" class=" hover:text-gray-500 transition">About</a>
-                <a href="index.html#projects" class=" hover:text-gray-500 transition">Projects</a>
-                <a href="index.html#blogs" class=" hover:text-gray-500 transition">Blogs</a>
-                <a href="index.html#contact" class=" hover:text-gray-500 transition">Contact</a>
+            <div class="flex flex-col space-y-4 p-4 text-3xl gap-4 text-black font-bold">
+                <a href="index.html#about" class="hover:text-gray-500 transition">About</a>
+                <a href="index.html#projects" class="hover:text-gray-500 transition">Projects</a>
+                <a href="index.html#blogs" class="hover:text-gray-500 transition">Blogs</a>
+                <a href="index.html#contact" class="hover:text-gray-500 transition">Contact</a>
             </div>
         </div>
     </nav>
     
-
     <!-- Project Details Section -->
     <section class="py-20 bg-gray-300">
         <div class="container mx-auto px-4">
@@ -85,9 +87,6 @@
                 <p>The project is built using <strong>React</strong> for the frontend, with <strong>Redux</strong> for state management. The backend is powered by <strong>Node.js</strong> and <strong>Express</strong>, and data is stored in <strong>MongoDB</strong>. To handle media storage, AWS S3 is used with pre-signed URLs to ensure security and efficiency.</p>
                 <p>One of the standout features is the <strong>calendar integration</strong>, which allows users to view and manage all their scheduled posts. The app also supports multiple <strong>OAuth integrations</strong> for different social media platforms, making it easy to manage various accounts securely.</p>
             </div>
-
-            <!-- Mockups Section -->
-          
 
             <!-- Live Link Section -->
             <div class="text-center">
