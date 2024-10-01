@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+.center{
+/* overflow: hidden; */
+   
+    background-color: rgb(228, 228, 228);
+    width: 100%; table-layout: fixed;
+}
+.table{
+  width: 100%;
+  max-width: 800px;
+  padding: 80px 40px;
+  
+}
+h1{
+  /* text-align: start; */
+}
+.bgImg{
+  background-image: url('https://img.freepik.com/free-vector/flat-safer-internet-day-illustration_23-2151164065.jpg?t=st=1727762141~exp=1727765741~hmac=044189fde53e4b153f67c769ae8566025f0c60302890ec33a0e6c16650b25b1f&w=740');
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+}
+.codeBox{
+
+max-width: 100%;
+ 
+}
+pre {
+  text-align: left;               /* Align text to the left */
+  background-color: #f5f5f5;      /* Optional: Adds a background color */
+  padding: 10px;                  /* Adds some padding */
+  border-radius: 5px;             /* Optional: Adds rounded corners */
+  overflow: auto;               /* Adds horizontal scroll if content overflows */
+  max-width: 100%;                /* Ensures it doesn't exceed the screen width */
+  box-sizing: border-box;         /* Include padding in width calculation */
+  white-space: pre-wrap;          /* Allow the text to wrap inside the container */
+}
+
+code {
+  font-family: "Courier New", Courier, monospace; /* Monospaced font for better readability */
+  overflow: hidden;
+  
+}
+code[class*="language-"], pre[class*="language-"] {
+  font-size: 1em !important;
+  white-space: unset !important;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 500px) {
+  pre {
+    max-width: 100%;
+    width: 100%;  /* Make the code block take up 100% of the available width */
+    font-size: 14px;
+    
+  }
+  code{
+    max-width: 90%;
+    width: 70%;  /* Make the code block take up 100% of the available width */
+  }
+}
+.p-large{
+  padding: 80px 0px;
+}
+.p-medium{
+  padding: 40px 0px;
+}
+.p-small{
+  padding: 20px 0px;
+}
+.p-xs{
+  padding: 12px 0px;
+}
+.p-b-large{
+  padding-bottom: 80px;
+}
+.p-b-medium{
+  padding-bottom: 40px;
+}
+.p-b-small{
+  padding-bottom: 20px;
+}
+.p-b-xs{
+  padding-bottom: 12px;
+}
+
+.m-b-large{
+  margin-bottom: 80px;
+}
+.m-b-medium{
+  margin-bottom: 40px;
+}
+.m-b-small{
+  margin-bottom: 20px;
+}
+.m-b-xs{
+  margin-bottom: 12px;
+}
+.m-b-xxs{
+  margin-bottom: 6px;
+}

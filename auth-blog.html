@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" rel="stylesheet" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+  </head>
+  <body>
+    <center class="center">
+      <table class="table">
+        <tr>
+          <td class="p-b-medium">
+            <h1 class="">How Easy It Has Become to Authenticate Users with Auth.js</h1>
+          </td>
+        </tr>
+        <tr>
+          <td class="bgImg "></td>
+        </tr>
+        <tr>
+          <td class="p-medium">
+            <h2 class="m-b-small">Introduction</h2>
+            <p>
+              Authentication has always been a critical aspect of application
+              development, ensuring that only authorized users can access
+              certain features. However, the process has historically been
+              complex and time-consuming, involving multiple steps such as
+              setting up OAuth, managing tokens, and integrating third-party
+              services. Thanks to libraries like Auth.js, this process is now
+              streamlined, making it accessible to both new and experienced
+              developers alike.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="p-b-medium">
+            <h2 class="m-b-small">Why Use Auth.js for User Authentication ?</h2>
+            <li class="m-b-xs">
+              <strong>Simplified Setup</strong>: Auth.js drastically reduces the
+              amount of boilerplate code needed to authenticate users.
+            </li>
+            <li class="m-b-xs">
+              <strong>Provider Support</strong>: It supports multiple
+              authentication providers such as Google, Facebook, and GitHub
+              out-of-the-box.
+            </li>
+            <li class="m-b-xs">
+              <strong>Security</strong>: Emphasize how it handles sensitive
+              tasks like token generation, password encryption, and session
+              management.
+            </li>
+            <li class="m-b-xs">
+              <strong>Customization</strong>: Highlight how developers can
+              easily customize authentication flows for specific needs.
+            </li>
+          </td>
+        </tr>
+        <tr>
+          <td class="p-b-medium">
+            <h2 class="m-b-small">Easily intigrate Auth.js in your Nextjs project</h2>
+            <div>
+              <div class="m-b-xs">
+                <h4 class="m-b-xxs">Install dependency</h4>
+                <i>npm install next-auth@beta</i>
+              </div>
+              <div class="m-b-xs">
+                <h4 class="m-b-xxs">Setup Enviroment</h4>
+                <i>npx auth secret</i>
+              </div>
+              <div class="m-b-xs"">
+                <h4 class="m-b-xxs">Configure setup</h4>
+                <ol class="m-b-small">
+                <li class="m-b-xs">Create <i>auth.ts</i> file in your root directory.</li>
+                <div class="codeBox">
+                    <pre>
+                        <code class="language-javascript">
+import NextAuth from &quot;next-auth&quot;;<br>
+import Google from &quot;next-auth/providers/google&quot;;<br>
+<br>
+export const &#123; handlers, auth, signIn, signOut &#125; = NextAuth(&#123;<br>
+&nbsp;&nbsp;providers: [Google],<br>
+&#125;);<br>
+                        </code>
+                      </pre>
+                </div>
+                <li class="m-b-xs">Add a Route Handler under <i>/app/api/auth/[...nextauth]/route.ts</i></li>
+                <div class="codeBox">
+                    <pre>
+                        <code class="language-javascript">
+import &#123; handlers &#125; from &quot;@/auth&quot;; // Referring to the auth.ts we just created
+                          <br>
+export const &#123; GET, POST &#125; = handlers;
+                        </code>
+                      </pre>
+                </div>
+                <li class="m-b-xs">To signin your users, make sure you have at least one authentication method setup. You then need to build a button which will call the sign in function from your Auth.js framework package.</li>
+                <i>./components/auth/signin-button.tsx</i>
+               
+                    <pre>
+                        <code class="language-javascript">
+import &#123; signIn &#125; from &quot;@/auth.ts&quot;;
+                          <br><br>
+export function SignIn() &#123;<br>
+&nbsp;&nbsp;return (<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;form<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;action=&#123;async () =&gt; &#123;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;use server&quot;;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await signIn();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;&#125;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type=&quot;submit&quot;&gt;Sign in&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br>
+&nbsp;&nbsp;);<br>
+&#125;
+                        </code>
+                      </pre>
+                      
+                
+            </ol>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
